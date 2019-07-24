@@ -1,8 +1,16 @@
 *, *:after, *:before {
   box-sizing: border-box;
 }
+@mixin background-img {
+  background-image: url("https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_128,h_128/https://breezeair.com.au/wp-content/uploads/2018/06/air-conditioner.png");
+  background-position-y: 50%;
+  background-position-x: 75%;
+  background-image: max 50cm;
+  background-repeat: no-repeat;
+}
+
 body {
-  background: #fff;
+  background: white;
   margin: 0;
   font-family: "Roboto", sans-serif;
   color: #272727;
@@ -33,7 +41,8 @@ body {
   color: #95989a;
 }
 .nav {
-  flex-basis: 80%;
+  //flex-basis: 80%;
+  text-align: right;
 }
 .nav__link {
   font-size: 12px;
@@ -82,15 +91,16 @@ body {
   width: 100%;
 }
 .tabs-content {
-  background: #f2f4ff url("https://i.imgur.com/iBd59zk.png") no-repeat bottom
-    right 135px;
+  background: #f2f4ff; 
   border-radius: 10px;
   padding-top: 40px;
   padding-left: 45px;
   padding-right: 45px;
   padding-bottom: 43px;
   margin-bottom: 65px;
+  @include background-img;
 }
+
 .tabs-content__title {
   font-size: 36px;
 }
@@ -125,7 +135,7 @@ body {
   font-size: 16px;
 }
 .card_bottom {
-  background-image: url('https://i.imgur.com/iFdkIbF.png');
+  background-image: url('https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_128,h_128/https://breezeair.com.au/wp-content/uploads/2018/06/air-conditioner.png');
   background-repeat: no-repeat;
   background-position: center right 80px;
   margin-bottom: 40px;
@@ -140,6 +150,7 @@ body {
 .card-wrap {
   display: flex;
   justify-content: space-between;
+  -o-fit-object: contain;
 }
 
 .section-subtitle {
@@ -168,7 +179,7 @@ body {
   transform: translateX(0);
 }
 .best-card__image_right {
-  background-image: url('https://i.imgur.com/Qs5ytIv.png');
+  background-image: url('https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_128,h_128/https://breezeair.com.au/wp-content/uploads/2018/06/air-conditioner.png');
   background-position: bottom right;
   background-repeat: no-repeat;
 }
