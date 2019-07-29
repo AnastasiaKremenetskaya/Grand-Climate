@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  
+  <script src="jquery/dist/jquery.min.js"></script>
   <!--  Meta  -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,7 +17,7 @@
     <div class="container">
       <div class="header-wrap">
         <div class="logo">Grand Climate</div> 
-        <nav class="nav">
+        <nav id="nav" class="nav">
           <a href="#section1" class="nav__link">Для дома</a>
           <a href="#section1" class="nav__link">Для офиса </a>
           <a href="#section1" class="nav__link">Для общественного заведения</a>
@@ -40,7 +40,7 @@
       <div class="tabs-content">
         <h2 class="tabs-content__title">Пользуйтесь нашими услугами по установке сплит-систем. <br>Это надёжно и безопасно.</h2>
         <p class="tabs-content__text">Вы можете быть уверены в вашей сплит-системе, если она&nbsp;установлена нашими профессионалами.</p>
-        <button class="button">Заказать установку сплит-системы</button>
+        <a id="preorder" href="#section1" class="button">Заказать установку сплит-системы</a>
       </div>
     </div><!-- /container -->
   </section>
@@ -121,7 +121,7 @@
           </div>
         </div>
         <div class="button-block">
-          <button type="submit" class="button">Заказать установку сплит-системы</button>
+          <button id="order" type="submit" class="button">Заказать установку сплит-системы</button>
         </div>
       </form>
     </div>

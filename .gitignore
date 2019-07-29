@@ -2,7 +2,7 @@
 index_processed.css.map
 .sass-cache/eeecbbbe07b985289a308cdb7345185f13fa6f19/index.scssc
 .sass-cache/eeecbbbe07b985289a308cdb7345185f13fa6f19/index.scssc
-**/.sass-cache
+.sass-cache/
 *.scssc
-*.sass-cache/
-*.DS_Store
+.DS_Store
+jquery/
