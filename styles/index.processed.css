@@ -224,7 +224,7 @@ body {
   margin: auto;
   color: #595c5e; }
 
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
   .container {
     max-width: 960px; }
 
@@ -309,7 +309,7 @@ body {
   .button-block {
     justify-content: center; }
 
-  .delovery__form {
+  .delivery__form {
     margin-top: 20px; } }
 
 /*# sourceMappingURL=index.processed.css.map */
