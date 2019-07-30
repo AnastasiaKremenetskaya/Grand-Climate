@@ -4,16 +4,20 @@
 
 var HandleOrderButtonContainer = document.querySelector('#order');
 
-//Capture click event after filling up the form
-HandleOrderButtonContainer.addEventListener('click', function () {
-    processOrder();
-});
+// //Capture click event after filling up the form
+// HandleOrderButtonContainer.addEventListener('click', function () {
+//     processOrder();
+// });
 
-//Handle order and user's data 
-function processOrder() {
-    alert('Эта кнопка смерти! Мы  уже выехали за вами');
+// //Handle order and user's data 
+// function processOrder() {
+//     alert('Эта кнопка смерти! Мы  уже выехали за вами');
+// }
+
+function addOrderToDatabase() {
+    
+    alert('submit');
 }
-
 //JQuery for smooth transition
 $(document).ready(function () {
     $("#preorder").on("click", function (event) {

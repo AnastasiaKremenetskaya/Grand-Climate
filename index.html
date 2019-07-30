@@ -75,19 +75,19 @@
       <h2 class="section-title best__title">Лучшие сплит-системы в мире</h2>
       <span class="section-subtitle best__subtitle">По версии мамы, бабушки и тёти</span>
       <div class="card-wrap">
-        <div class="col-sm-6">
+        <div class="card-block best__card-block">
           <div class="card best-card">
             <img src="http://www.travellershousecoffee.com/images/menuPictures/MenuItemSample1.jpg" alt="" class="best-card__image">
           </div>
           <p class="best-card__text">В кафе</p>
         </div>
-        <div class="col-sm-6">
+        <div class="card-block best__card-block">
           <div class="card best-card">
             <img src="https://www.younghouselove.com/wp-content/uploads/2008/07/floating-a-bed.jpg" alt="" class="best-card__image">
           </div>
           <p class="best-card__text">В доме</p>
         </div>
-        <div class="col-sm-6">
+        <div class="card-block best__card-block">
           <div class="card best-card">
               <img src="https://i4.ypcdn.com/blob/8f81ae66ddfa679e511fb3766d414c6b171f76cb_240x260_crop.jpg" alt="" class="best-card__image">
           </div>
@@ -101,15 +101,15 @@
     <div class="container">
       <h2 id="section1" class="section-title delivery__title">Получите качественный сплит, не выходя из дома</h2>
       <span class="section-subtitle best__subtitle">Установка сплит-систем осуществляется только по Волгограду и области</span>
-      <form action="#" class="form delivery__form">
+      <form action="/orders_db.php" class="form delivery__form" method="POST">
         <div class="row">
            <div class="col-100">
-             <input type="text" class="input form__input" placeholder="Фамилия Имя Отчество">
+             <input type="text" class="input form__input" placeholder="Фамилия Имя Отчество" required>
           </div>
         </div>
         <div class="row">
           <div class="col-50">
-             <input type="tel" class="input form__input" placeholder="Номер телефона">
+             <input type="tel" class="input form__input" placeholder="Номер телефона" required>
           </div>
           <div class="col-50">
              <input type="email" class="input form__input" placeholder="Электронная почта">
