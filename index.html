@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <script src="jquery/dist/jquery.min.js"></script>
   <!--  Meta  -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Grand Climate</title>
-  
+
   <!--  Styles  -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/index.processed.css">
 </head>
+
 <body>
-  
+
   <header class="header">
     <div class="container">
       <div class="header-wrap">
-        <div class="logo">Grand Climate</div> 
+        <div class="logo">Grand Climate</div>
         <nav id="nav" class="nav">
           <a href="#section1" class="nav__link">Для дома</a>
           <a href="#section1" class="nav__link">Для офиса </a>
@@ -25,7 +27,7 @@
       </div><!-- header-wrap -->
     </div>
   </header>
-  
+
   <section>
     <div class="container">
       <div class="tabs">
@@ -37,13 +39,15 @@
         </ul>
       </div><!-- /tabs -->
       <div class="tabs-content">
-        <h2 class="tabs-content__title">Пользуйтесь нашими услугами по установке сплит-систем. <br>Это надёжно и безопасно.</h2>
-        <p class="tabs-content__text">Вы можете быть уверены в вашей сплит-системе, если она&nbsp;установлена нашими профессионалами.</p>
+        <h2 class="tabs-content__title">Пользуйтесь нашими услугами по установке сплит-систем. <br>Это надёжно и
+          безопасно.</h2>
+        <p class="tabs-content__text">Вы можете быть уверены в вашей сплит-системе, если она&nbsp;установлена нашими
+          профессионалами.</p>
         <button id="preorder" href="#section1" class="button">Заказать установку сплит-системы</button>
       </div>
     </div><!-- /container -->
   </section>
-  
+
   <section class="features">
     <div class="container">
       <h2 class="section-title section__title">Вентиляция с душой</h2>
@@ -69,7 +73,7 @@
       </div>
     </div>
   </section>
-  
+
   <section class="best">
     <div class="container">
       <h2 class="section-title best__title">Лучшие сплит-системы в мире</h2>
@@ -77,47 +81,55 @@
       <div class="card-wrap">
         <div class="card-block best__card-block">
           <div class="card best-card">
-            <img src="http://www.travellershousecoffee.com/images/menuPictures/MenuItemSample1.jpg" alt="" class="best-card__image">
+            <img src="http://www.travellershousecoffee.com/images/menuPictures/MenuItemSample1.jpg" alt=""
+              class="best-card__image">
           </div>
           <p class="best-card__text">В кафе</p>
         </div>
         <div class="card-block best__card-block">
           <div class="card best-card">
-            <img src="https://www.younghouselove.com/wp-content/uploads/2008/07/floating-a-bed.jpg" alt="" class="best-card__image">
+            <img src="https://www.younghouselove.com/wp-content/uploads/2008/07/floating-a-bed.jpg" alt=""
+              class="best-card__image">
           </div>
           <p class="best-card__text">В доме</p>
         </div>
         <div class="card-block best__card-block">
           <div class="card best-card">
-              <img src="https://i4.ypcdn.com/blob/8f81ae66ddfa679e511fb3766d414c6b171f76cb_240x260_crop.jpg" alt="" class="best-card__image">
+            <img src="https://i4.ypcdn.com/blob/8f81ae66ddfa679e511fb3766d414c6b171f76cb_240x260_crop.jpg" alt=""
+              class="best-card__image">
           </div>
           <p class="best-card__text">В офисе</p>
         </div>
       </div>
     </div>
   </section>
-  
-  <section class="delivery">
+
+  <section id="section1" class="delivery">
     <div class="container">
-      <h2 id="section1" class="section-title delivery__title">Получите качественный сплит, не выходя из дома</h2>
-      <span class="section-subtitle best__subtitle">Установка сплит-систем осуществляется только по Волгограду и области</span>
-      <form action="/orders_db.php" class="form delivery__form" method="POST">
+      <h2 class="section-title delivery__title">Получите качественный сплит, не выходя из дома</h2>
+      <span class="section-subtitle best__subtitle">Установка сплит-систем осуществляется только по Волгограду и
+        области</span>
+      <form action="orders_db.php" class="form delivery__form" method="POST">
         <div class="row">
-           <div class="col-100">
-             <input type="text" class="input form__input" placeholder="Фамилия Имя Отчество" required>
+          <div class="col-100">
+            <input name="FIO" type="text" class="input form__input" placeholder="Фамилия Имя Отчество" required>
+            <label for="FIO">Ваше имя</label>
           </div>
         </div>
         <div class="row">
           <div class="col-50">
-             <input type="tel" class="input form__input" placeholder="Номер телефона" required>
+           <input prefix="+7 (" value="+7 (" name="phone" type="tel" class="input form__input" required>           
+           <label name="phone">Номер телефона</label>
           </div>
           <div class="col-50">
-             <input type="email" class="input form__input" placeholder="Электронная почта">
+            <input name="email" type="email" class="input form__input" placeholder="Электронная почта">
+            <label name="email">Электронная почта</label>
           </div>
         </div>
         <div class="row">
           <div class="col-100">
-             <input type="text" class="input form__input" placeholder="Адрес">
+            <input name="adress" type="text" class="input form__input" placeholder="Адрес">
+            <label name="adress">Адрес</label>
           </div>
         </div>
         <div class="button-block">
@@ -126,7 +138,7 @@
       </form>
     </div>
   </section>
-  
+
   <footer class="footer">
     <div class="container">
       <p class="footer__text">
@@ -134,9 +146,10 @@
       </p>
     </div>
   </footer>
-  
-  
+
+
   <!-- Scripts -->
   <script src="scripts/index.js"></script>
 </body>
+
 </html>

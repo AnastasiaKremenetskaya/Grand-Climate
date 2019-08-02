@@ -63,6 +63,8 @@ body {
   color: #95989a;
 }
 .tabs-menu {
+  outline: 0;
+  cursor: pointer;
   list-style: none;
   padding: 0;
   display: flex;
@@ -81,6 +83,10 @@ body {
   height: 4px;
   background-color: #fcde29;
   transition: width 0.2s;
+  -webkit-transition: width 0.2s;
+  -moz-transition: width 0.2s;
+  -ms-transition: width 0.2s;
+  -o-transition: width 0.2s;
 }
 .tabs-menu__item:hover:after {
   width: 100%;
@@ -107,6 +113,7 @@ body {
   margin-top: 50px;
 }
 .button {
+  cursor: pointer;
   border-radius: 6px;
   background-color: #fcde29;
   padding: 16px 33px;
@@ -172,6 +179,10 @@ body {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
 .best-card__text {
   max-width: 200px;
@@ -185,23 +196,83 @@ body {
   padding-top: 60px;
   padding-bottom: 100px;
 }
+
+//TODO: ADD BORDERS FOR INPUT FORM AND FIX LABEL FOR COL-50, 
+      //  MAKE PREFIX AND VALUE FOR INPUT FORM CONSTANT (in phone number)
+
 .form {
   max-width: 600px;
+  float: center;
   margin: auto;
+  > div {
+    position: relative;
+    overflow: hidden;
+  }
+  input, textarea {
+    margin-bottom: 30px;
+    background-color: #f7f8ff;
+    border: 2px #fcde29;
+    padding: 20px;
+    width: 100%;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    font-size: 16px;
+    z-index: 1;
+    outline: 0;
+    &:valid {
+      //Hides the label
+      background: #f7f8ff;
+    }
+    &:focus {
+      border-color:#fcde29; //after
+    }  
+    &:focus + label {
+      border-top-right-radius: 7px; 
+      border-bottom-right-radius: 7px;
+      height: 15.4mm; //check prop for mobile rendering
+      background: #fcde29;
+      color: white;
+      font-size: 70%;
+      padding: 1px 6px;
+      z-index: 2;
+      text-transform: uppercase;
+    } 
+  }
+  label {
+    transition: // not padding
+      background 0.2s,
+      color 0.2s,
+      top 0.2s,
+      bottom 0.2s,
+      right 0.2s,
+      left 0.2s;
+    position: absolute;
+    color: #999;
+    padding: 7px 6px;
+  }
+  textarea {
+    display: block;
+    resize: vertical;
+  }
 }
 .delivery__form {
   margin-top: 60px;
-}
-.input {
-  background-color: #f7f8ff;
-  border: none; 
-  padding: 20px;
-  width: 100%;
-  border-radius: 7px;
-  font-size: 16px;
-}
-.form__input {
-  margin-bottom: 30px;
+  
+  label {
+    top: 2px;
+    right: 100%;
+    width: 100%;
+    bottom: 2px;
+  }
+  input:focus + label, textarea:focus + label {
+    right: 0;
+    margin-right: 0;
+    width: 40%;
+    padding-top: 5px;
+  }
 }
 .row {
   display: flex;
