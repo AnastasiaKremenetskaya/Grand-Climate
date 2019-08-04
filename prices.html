@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <script src="jquery/dist/jquery.min.js"></script>
+    <!--  Meta  -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grand Climate</title>
+
+    <!--  Styles  -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.processed.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-wrap">
+                <div class="logo">Grand Climate</div>
+                <nav id="nav" class="nav">
+                    <a href="#section1" class="nav__link">Для дома</a>
+                    <a href="#section1" class="nav__link">Для офиса </a>
+                    <a href="#section1" class="nav__link">Для общественного заведения</a>
+                </nav>
+            </div><!-- header-wrap -->
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="tabs">
+                <h1 class="tabs-logo">Grand Climate - управляй погодой, невзирая на обстоятельства</h1>
+                <ul class="tabs-menu">
+                    <li>
+                        <a class="tabs-menu__item" href="index.html">Главная</a>
+                    </li>
+                    <li>
+                        <a class="tabs-menu__item" href="staff.html">Наши сотрудники</a>
+                    </li>
+                    <li>
+                        <a class="tabs-menu__item" href="contact.html">Контакты</a>
+                    </li>
+                </ul>
+            </div><!-- /tabs -->
+        </div><!-- /container -->
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title section__title">Вентиляция с душой</h2>
+            <div class="card card-full card_bottom">
+                <h3 class="card__tilte">При использовании наших услуг</h3>
+                <p class="card__text">
+                    Ваши деньги никогда не улетят на ветер. <br>Гарантируем надежность и качество!
+                </p>
+            </div>
+            <h3 class="card__tilte">Поможем выбрать оптимальный пакет услуг на любой карман</h3>
+            <div class="card-wrap">
+                <div class="card section__card">
+                    <h3 class="card__title">Эконом</h3>
+                    <p class="card__text">Данный пакет включает в себя:
+                        <ul>
+                            <li>Установка одной сплит системы</li>
+                            <li>Для Центрального, Краснооктябрьского, <br>Ворошиловского и Дзержинского районов</li>
+                        </ul>
+                        Цена: 1000 RUB</p>
+                </div>
+                <div class="card section__card">
+                    <h3 class="card__title">Стандарт</h3>
+                    <p class="card__text">Данный пакет включает в себя:
+                        <ul>
+                            <li>Установка двух сплит систем</li>
+                            <li>Любой район в черте города</li>
+                        </ul>
+                        Цена: 1700 RUB</p>
+                </div>
+                <div class="card section__card">
+                    <h3 class="card__title">Премиум</h3>
+                    <p class="card__text">
+                        <ul>
+                            <li>Установка до 4-х сплит систем</li>
+                            <li>Полный монтаж вентиляции в общественном заведении</li>
+                            <li>Выезд в любой район города и области</li>
+                        </ul>
+                        Цена: 5000 RUB и выше в зависимости от объема и сложности
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <h3 class="card__title">За дополнительной информацией обращайтесь по телефону 89000000666</h3>
+    </div>
+
+    <section id="section1" class="delivery">
+        <div class="container">
+            <h2 class="section-title delivery__title">Или можете заполнить анкету и мы Вам перезвоним</h2>
+            <span class="section-subtitle best__subtitle">Установка сплит-систем осуществляется только по Волгограду и
+                области</span>
+            <form action="orders_db.php" class="form delivery__form" method="POST">
+                <div class="row">
+                    <div class="col-100">
+                        <input name="FIO" type="text" class="input form__input" placeholder="Фамилия Имя Отчество"
+                            required>
+                        <label for="FIO">Ваше имя</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-50">
+                        <input prefix="+7 (" value="+7 (" name="phone" type="tel" class="input form__input" required>
+                        <label name="phone">Номер телефона</label>
+                    </div>
+                    <div class="col-50">
+                        <input name="email" type="email" class="input form__input" placeholder="Электронная почта">
+                        <label name="email">Электронная почта</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-100">
+                        <input name="adress" type="text" class="input form__input" placeholder="Адрес">
+                        <label name="adress">Адрес</label>
+                    </div>
+                </div>
+                <div class="button-block">
+                    <button id="order" type="submit" class="button">Заказать установку сплит-системы</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">
+                ©2019 Crem Studio
+            </p>
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="scripts/index.js"></script>
+
+</body>
+
+</html>

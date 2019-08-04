@@ -60,6 +60,9 @@ body {
   display: flex; }
 
 .tabs-menu__item {
+  color: #272727;
+  text-decoration: none;
+  display: block;
   margin-left: 15px;
   position: relative; }
 
