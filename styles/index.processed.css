@@ -158,6 +158,15 @@ body {
   font-size: 16px;
   margin-bottom: 32px; }
 
+.econom {
+  background-color: #a2d6a2; }
+
+.standart {
+  background-color: #f7d8d4; }
+
+.premium {
+  background-color: #fcde29; }
+
 .best__title {
   margin-bottom: 10px; }
 
